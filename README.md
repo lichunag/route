@@ -1,7 +1,7 @@
 # route
-对于ng项目中的路由切换
-一共有三种类型
-第一种 是直接切换
+//对于ng项目中的路由切换
+//一共有三种类型
+//第一种 是直接切换
 var app = angular.module('qmgj',['ui.router']);
 app.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$urlRouterProvider){
 //这句话是在页面没有设置路由切换的前提下,强制跳转
