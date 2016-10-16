@@ -2,6 +2,7 @@
 //对于ng项目中的路由切换
 //一共有三种类型
 //第一种 是直接切换
+<script src="/javascripts/application.js" type="text/javascript" charset="utf-8" async defer>
 var app = angular.module('qmgj',['ui.router']);
 app.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$urlRouterProvider){
 //这句话是在页面没有设置路由切换的前提下,强制跳转
@@ -25,7 +26,7 @@ app.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$urlRo
          $scope.myFn = function(index){
             $scope.showIndex = index;
          }
-
+</script>
         $http({
          url:'json/objshow'+$stateParams.id+'.json',
          // method:'get'
